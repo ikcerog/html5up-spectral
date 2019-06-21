@@ -17,3 +17,6 @@ section#banner .inner {
     background-color: #76232F;
 }
 
+.features li:before {
+	color: #f7f7f7;
+}
