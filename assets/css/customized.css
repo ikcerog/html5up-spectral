@@ -1,0 +1,5 @@
+section#banner {
+	background-image: url('http://lorempixel.com/1600/800/?blur=3');
+	background-position: center center;
+	background-attachment: fixed;
+}
