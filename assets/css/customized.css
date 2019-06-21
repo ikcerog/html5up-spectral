@@ -4,7 +4,3 @@ section#banner {
 	background-position: center center;
 	background-size: cover;
 }
-
-body.is-mobile.landing #banner {
-	background-image: inherit;
-}
