@@ -5,6 +5,10 @@ section#banner {
 	background-size: cover;
 }
 
+section#banner .inner {
+	background: rgba(0,0,0,0.5);
+}
+
 .wrapper.style3 {
 	background-color: #C8102E;
 }
@@ -12,3 +16,4 @@ section#banner {
 .wrapper.style1 {
     background-color: #76232F;
 }
+
