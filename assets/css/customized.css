@@ -1,3 +1,17 @@
+/* -- MEDIA QUERIES -- */
+
+@media screen and (max-width: 736px) {
+	ul.cards .card, ul.cards .fact, ul.cards .myth, ul.cards li {
+		display: block !important;
+		max-width: 100% !important;
+		width: 100% !important;
+		float: none !important;
+	}
+}
+
+
+/* -- STUFF -- */
+
 section#banner {
 	background-attachment: fixed;
 	background-position: center center;
@@ -20,3 +34,113 @@ section#banner .inner {
 .features li:before {
 	color: #f7f7f7;
 }
+
+#facts {
+	background-color: #9D2235 !important;
+}
+
+/* --- MYTH LIST -- */
+
+.bold {
+	font-weight: 900 !important;
+}
+
+ul.cards {
+	width: 1400px;
+	max-width: 90%;
+	margin: 10px auto;
+}
+
+ul.cards li {
+	color: black;
+	display: flex;
+	padding: 10px 10px 0 10px;
+}
+
+ul.cards .myth {
+	align-items: center;
+	border: 2px solid #C8102E !important;
+	display: flex;
+	flex: 1;
+	font-weight: 600;
+	max-width: 30%;
+	margin: 10px;
+	padding: 20px;
+}
+
+ul.cards img.icon {
+	float: left;
+	width: 50px;
+	/*shape-outside: circle(50%);*/
+	padding: 10px;
+  	float: left;
+  	margin-top: -5px;
+}
+
+ul.cards .myth p {
+	flex: 1;
+	padding: 5%;
+	margin: 0 !important;
+	letter-spacing: 0px;
+}
+
+.myth .bold {
+	color: #C8102E;
+}
+
+.fact .bold {
+	color: #13A48E;
+}
+
+ul.cards .card {
+	background-color: rgba(255,255,255,0.95);
+	border-radius: 5px;
+	box-shadow: 0px 2px 15px rgba(0,0,0,0.5);
+	font-size: 1.2em;
+	line-height: 1.3em;
+	letter-spacing: 0px !important;
+}
+
+ul.cards .fact {
+	display: inline-block;
+	border: 2px solid #13A48E;
+	float: right;
+	flex: 1;
+	margin: 10px;
+	padding: 3%;
+}
+
+
+/* -- FONTS -- */
+
+body {
+	font-family: RocketSans, sans-serif !important;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: RocketSans;
+    src: url(https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Bold.woff2) format("woff2"),url(https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Bold.woff) format("woff");
+    font-weight: 700
+}
+
+@font-face {
+    font-display: swap;
+    font-family: RocketSans;
+    src: url(https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Medium.woff2) format("woff2"),url(https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Medium.woff) format("woff");
+    font-weight: 500
+}
+
+@font-face {
+    font-display: swap;
+    font-family: RocketSans;
+    src: url(https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Regular.woff2) format("woff2"),url(https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Regular.woff) format("woff");
+    font-weight: 400
+}
+
+@font-face {
+    font-display: swap;
+    font-family: RocketSans;
+    src: url(https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Light.woff2) format("woff2"),url(https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Fonts/RocketSans-Light.woff) format("woff");
+    font-weight: 300
+}		
