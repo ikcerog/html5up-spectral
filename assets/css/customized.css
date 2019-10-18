@@ -19,6 +19,11 @@ section#banner {
 	height: 50vh;
 }
 
+#banner img.logo {
+	max-width: 50vw;
+	width: 600px;
+}
+
 section#banner .inner {
 	background: rgba(0,0,0,0.5);
 }
@@ -115,6 +120,14 @@ ul.cards .fact {
 
 body {
 	font-family: RocketSans, sans-serif !important;
+}
+
+#inquiries p, .quoteAuthor {
+	color:  #fff !important;
+}
+
+.quoteAuthor {
+	font-style: italic;
 }
 
 @font-face {
