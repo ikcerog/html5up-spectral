@@ -1,11 +1,15 @@
 /* -- MEDIA QUERIES -- */
 
 @media screen and (max-width: 736px) {
-	ul.cards .card, ul.cards .fact, ul.cards .myth, ul.cards li {
+	ul.cards li {
 		display: block !important;
+		margin-bottom: 30px;
+	}
+	ul.cards {
+		margin: 0 !important;
+	}
+	ul.cards .myth {
 		max-width: 100% !important;
-		width: 100% !important;
-		float: none !important;
 	}
 }
 
@@ -17,6 +21,10 @@ section#banner {
 	background-position: center center;
 	background-size: cover;
 	height: 50vh;
+}
+
+.card {
+	display: flex;
 }
 
 #banner img.logo {
@@ -62,31 +70,25 @@ ul.cards li {
 	padding: 10px 10px 0 10px;
 }
 
-ul.cards .myth {
-	align-items: center;
-	border: 2px solid #C8102E !important;
-	display: flex;
-	flex: 1;
-	font-weight: 600;
-	max-width: 30%;
-	margin: 10px;
-	padding: 20px;
+ul.cards .myth p, ul.cards .fact p {
+	/*flex: 1;*/
+	display: block;
+	padding: 3%;
+	margin: 0 !important;
+	letter-spacing: 0px;
 }
 
 ul.cards img.icon {
-	float: left;
 	width: 50px;
-	/*shape-outside: circle(50%);*/
-	padding: 10px;
+	height: 50px;
   	float: left;
-  	margin-top: -5px;
 }
 
-ul.cards .myth p {
-	flex: 1;
-	padding: 5%;
-	margin: 0 !important;
-	letter-spacing: 0px;
+/* -- MYTH & FACT LABELS -- */
+
+.myth p {
+	display: block;
+	float:  right;
 }
 
 .myth .bold {
@@ -96,6 +98,8 @@ ul.cards .myth p {
 .fact .bold {
 	color: #13A48E;
 }
+
+/* -- MYTH & FACT ICONS -- */
 
 ul.cards .card {
 	background-color: rgba(255,255,255,0.95);
@@ -107,14 +111,23 @@ ul.cards .card {
 }
 
 ul.cards .fact {
-	display: inline-block;
 	border: 2px solid #13A48E;
 	float: right;
 	flex: 1;
 	margin: 10px;
 	padding: 3%;
+	align-items: center;
 }
 
+ul.cards .myth {
+	align-items: center;
+	border: 2px solid #C8102E !important;
+	flex: 1;
+	font-weight: 600;
+	max-width: 30%;
+	margin: 10px;
+	padding: 20px;
+}
 
 /* -- FONTS -- */
 
