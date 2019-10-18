@@ -3,6 +3,7 @@ section#banner {
 	background-image: url('//picsum.photos/2000/800/?blur=2');
 	background-position: center center;
 	background-size: cover;
+	height: 50vh;
 }
 
 section#banner .inner {
