@@ -5,31 +5,57 @@
 		display: block !important;
 		margin-bottom: 30px;
 	}
+	.fact.card {
+		margin-bottom: 60px !important;
+	}
 	ul.cards {
 		margin: 0 !important;
 	}
 	ul.cards .myth {
 		max-width: 100% !important;
 	}
+	section#facts {
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	img.icon {
+		width: 25px !important;
+		height: 25px !important;
+	}
 }
 
 
-/* -- STUFF -- */
+/* ---- FLEXBOX ---- */
+
+ul.cards li, .card, .card .container {
+	display: flex;
+}
+
+ul.cards .fact, ul.cards .myth {
+	align-items: center;
+	flex: 1;
+}
+
+
+/* HEADERS */
+
+.mythHeader {
+	width: 100%;
+	display: block;
+	color: white;
+	background: #C8102E;
+	text-align: center;
+}
+
+/* ---- BACKGROUNDS ---- */
 
 section#banner {
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
 	height: 50vh;
-}
-
-.card {
-	display: flex;
-}
-
-#banner img.logo {
-	max-width: 50vw;
-	width: 600px;
 }
 
 section#banner .inner {
@@ -52,39 +78,43 @@ section#banner .inner {
 	background-color: #9D2235 !important;
 }
 
-/* --- MYTH LIST -- */
+/* ---- IMAGE SIZING ---- */
 
-.bold {
-	font-weight: 900 !important;
+/* HEADER LOGO */
+
+#banner img.logo {
+	max-width: 50vw;
+	width: 600px;
 }
 
+/* ---- MYTH LIST ---- */
+
 ul.cards {
-	width: 1400px;
-	max-width: 90%;
+	max-width: 98%;
 	margin: 10px auto;
+	width: 1400px;
 }
 
 ul.cards li {
 	color: black;
-	display: flex;
 	padding: 10px 10px 0 10px;
 }
 
 ul.cards .myth p, ul.cards .fact p {
 	/*flex: 1;*/
 	display: block;
-	padding: 3%;
-	margin: 0 !important;
 	letter-spacing: 0px;
+	padding: 0 3%;
+	margin: 0 !important;
 }
 
 ul.cards img.icon {
+  	float: left;
 	width: 50px;
 	height: 50px;
-  	float: left;
 }
 
-/* -- MYTH & FACT LABELS -- */
+/* ---- MYTH & FACT LABELS ---- */
 
 .myth p {
 	display: block;
@@ -113,26 +143,26 @@ ul.cards .card {
 ul.cards .fact {
 	border: 2px solid #13A48E;
 	float: right;
-	flex: 1;
 	margin: 10px;
 	padding: 3%;
-	align-items: center;
 }
 
 ul.cards .myth {
-	align-items: center;
 	border: 2px solid #C8102E !important;
-	flex: 1;
 	font-weight: 600;
 	max-width: 30%;
 	margin: 10px;
 	padding: 20px;
 }
 
-/* -- FONTS -- */
+/* ---- FONTS ---- */
 
 body {
 	font-family: RocketSans, sans-serif !important;
+}
+
+.bold {
+	font-weight: 900 !important;
 }
 
 #inquiries p, .quoteAuthor {
