@@ -1,3 +1,12 @@
+/* ---- VARIABLES ---- */
+
+:root {
+	--rocketred: #C8102E;
+	--midred: #9D2235;
+	--deepred: #76232F;
+	--green: #13A48E;
+}
+
 /* -- MEDIA QUERIES -- */
 
 @media screen and (max-width: 736px) {
@@ -21,8 +30,11 @@
 
 @media screen and (max-width: 980px) {
 	img.icon {
-		width: 25px !important;
-		height: 25px !important;
+		display: block;
+		max-width: 25px !important;
+		max-height: 25px !important;
+		width: auto;
+		height: auto;
 	}
 }
 
@@ -45,7 +57,7 @@ ul.cards .fact, ul.cards .myth {
 	width: 100%;
 	display: block;
 	color: white;
-	background: #C8102E;
+	background: var(--rocketred);
 	text-align: center;
 }
 
@@ -69,11 +81,11 @@ section#banner .inner {
 }
 
 .wrapper.style3 {
-	background-color: #C8102E;
+	background-color: var(--rocketred);
 }
 
 .wrapper.style1 {
-    background-color: #76232F;
+    background-color: var(--deepred);
 }
 
 .features li:before {
@@ -81,7 +93,7 @@ section#banner .inner {
 }
 
 #facts {
-	background-color: #9D2235 !important;
+	background-color: var(--midred) !important;
 }
 
 /* ---- IMAGE SIZING ---- */
@@ -116,8 +128,11 @@ ul.cards .myth p, ul.cards .fact p {
 
 ul.cards img.icon {
   	float: left;
-	width: 50px;
-	height: 50px;
+  	display: block;
+	max-width: 50px;
+	max-height: 50px;
+	height: auto;
+	width: auto;
 }
 
 /* ---- MYTH & FACT LABELS ---- */
@@ -128,11 +143,11 @@ ul.cards img.icon {
 }
 
 .myth .bold {
-	color: #C8102E;
+	color: var(--rocketred);
 }
 
 .fact .bold {
-	color: #13A48E;
+	color: var(--green);
 }
 
 /* -- MYTH & FACT ICONS -- */
@@ -147,14 +162,14 @@ ul.cards .card {
 }
 
 ul.cards .fact {
-	border: 2px solid #13A48E;
+	border: 2px solid var(--green);
 	float: right;
 	margin: 10px;
 	padding: 3%;
 }
 
 ul.cards .myth {
-	border: 2px solid #C8102E !important;
+	border: 2px solid var(--rocketred) !important;
 	font-weight: 600;
 	max-width: 30%;
 	margin: 10px;
