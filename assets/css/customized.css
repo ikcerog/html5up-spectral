@@ -58,6 +58,12 @@ section#banner {
 	height: 50vh;
 }
 
+section#facts {
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
 section#banner .inner {
 	background: rgba(0,0,0,0.5);
 }
