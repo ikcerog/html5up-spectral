@@ -88,7 +88,7 @@ ul.cards .fact, ul.cards .myth {
 
 section#inquiries {
 		background: 	radial-gradient(ellipse at top, var(--midred), transparent),
-            		radial-gradient(ellipse at bottom, var(--deepred), transparent);
+            		radial-gradient(ellipse at bottom, var(--deepred), #611c26);
 }
 
 section#banner {
