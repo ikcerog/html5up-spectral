@@ -127,7 +127,7 @@ section#banner .inner {
 #header .headerLogo {
 	width: 100px;
 	margin-left: 2vw;
-	padding-top: 20px;
+	padding-top: 10px;
 	display: inline-block;
 	flex: 1;
 }
