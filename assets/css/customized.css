@@ -58,7 +58,7 @@
 	}
 	.wrapper.style1,section#inquiries {
     background: 	radial-gradient(ellipse at top, #9D2235, transparent),
-            		radial-gradient(ellipse at bottom, #76232F, transparent) !important;
+            		radial-gradient(ellipse at bottom, #76232F, #611c26) !important;
 	}
 }
 
