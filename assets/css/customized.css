@@ -152,7 +152,7 @@ ul.cards li {
 }
 
 ul.cards .myth p, ul.cards .fact p {
-	/*flex: 1;*/
+	flex: 1;
 	display: block;
 	letter-spacing: 0px;
 	padding: 0 3%;
