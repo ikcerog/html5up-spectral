@@ -46,9 +46,11 @@
 	}
 }
 
+/* ☠️ INTERNET EXPLORER ONLY ☢️ */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	ul.cards .myth p, ul.cards .fact p {
-		flex: 0 !important;
+		display: block;
+		width: calc(100% - 50px) !important;
 	}
 	.card .container {
 		display: block !important;
