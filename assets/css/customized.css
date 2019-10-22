@@ -50,6 +50,9 @@
 	ul.cards .myth p, ul.cards .fact p {
 		flex: 0 !important;
 	}
+	.card .container {
+		display: block !important;
+	}
 }
 
 /* ---- FLEXBOX ---- */
