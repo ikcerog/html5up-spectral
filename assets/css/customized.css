@@ -63,6 +63,11 @@ ul.cards .fact, ul.cards .myth {
 
 /* ---- BACKGROUNDS ---- */
 
+section#inquiries {
+		background: 	radial-gradient(ellipse at top, var(--midred), transparent),
+            		radial-gradient(ellipse at bottom, var(--deepred), transparent);
+}
+
 section#banner {
 	background-attachment: fixed;
 	background-position: center center;
