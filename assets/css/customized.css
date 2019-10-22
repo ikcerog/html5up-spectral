@@ -36,6 +36,11 @@
 		width: auto;
 		height: auto;
 	}
+	.headerLogo img {
+		width: 120px !important;
+		padding-top: 10px !important;
+		transition: 0.3s;
+	}
 }
 
 
@@ -111,9 +116,9 @@ section#banner .inner {
 }
 
 #header {
-	height: 60px;
-	display: flex;
 	align-items: center;
+	display: flex;
+	height: 60px;
 }
 
 #header.alt {
@@ -124,12 +129,13 @@ section#banner .inner {
 	flex: 1;
 }
 
-#header .headerLogo {
-	width: 100px;
-	margin-left: 2vw;
-	padding-top: 10px;
+#header .headerLogo img {
 	display: inline-block;
 	flex: 1;
+	margin-left: 5vw;
+	padding-top: 20px;
+	transition: 0.3s;
+	width: 180px;
 }
 
 /* ---- MYTH LIST ---- */
