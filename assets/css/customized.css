@@ -22,7 +22,6 @@
 	}
 	ul.cards .myth {
 		max-width: 100% !important;
-		padding: 10px !important;
 	}
 	section#facts {
 		overflow: hidden;
@@ -41,6 +40,9 @@
 		width: 120px !important;
 		padding-top: 15px !important;
 		transition: 0.3s;
+	}
+	ul.cards .myth {
+		padding: 10px !important;
 	}
 }
 
