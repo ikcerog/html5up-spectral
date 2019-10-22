@@ -22,6 +22,7 @@
 	}
 	ul.cards .myth {
 		max-width: 100% !important;
+		padding: 10px !important;
 	}
 	section#facts {
 		overflow: hidden;
