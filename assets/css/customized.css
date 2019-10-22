@@ -56,6 +56,9 @@
 	.card .container {
 		display: block !important;
 	}
+	.wrapper.style1,section#inquiries {
+    background-color: var(--deepred) !important;
+}
 }
 
 /* ---- FLEXBOX ---- */
