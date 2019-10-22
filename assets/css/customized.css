@@ -46,6 +46,11 @@
 	}
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	ul.cards .myth p, ul.cards .fact p {
+		flex: 0 !important;
+	}
+}
 
 /* ---- FLEXBOX ---- */
 
