@@ -29,6 +29,18 @@
 }
 
 @media screen and (max-width: 980px) {
+	.mobileHidden {
+		display: none !important;
+	}
+
+	.mobileOnly {
+		display: initial !important;
+	}
+
+	nav#nav {
+		width: initial !important;
+	}
+
 	img.icon {
 		display: block;
 		max-width: 25px !important;
@@ -56,25 +68,47 @@
 	.card .container {
 		display: block !important;
 	}
-	.wrapper.style1,section#inquiries {
+	.wrapper.style1,section#statements {
     background: 	radial-gradient(ellipse at top, #9D2235, transparent),
             		radial-gradient(ellipse at bottom, #76232F, #611c26) !important;
 	}
 }
 
+/* ---- MOBILE ONLY / HIDDEN ---- */
+
+.mobileOnly {
+	display: none;
+}
+
+.mobileHidden {
+	display: initial;
+}
+
 /* ---- FLEXBOX ---- */
 
-ul.cards li, .card, .card .container, #header {
+ul.cards li, .card, .card .container, #header, nav#nav .menuItems ul {
 	display: flex;
 }
 
-ul.cards .fact, ul.cards .myth {
+ul.cards .fact, ul.cards .myth, .menuItems ul li {
 	align-items: center;
 	flex: 1;
 }
 
+/* FLEX NAV */
 
-/* HEADERS */
+nav#nav {
+	width: calc(100% - 400px);
+	max-width: 1400px;
+}
+
+.menuItems ul li {
+	font-size: 0.8em;
+	letter-spacing: 0px !important;
+	list-style-type: none;
+}
+
+/* ---- HEADERS ---- */
 
 .mythHeader {
 	width: 100%;
@@ -86,7 +120,7 @@ ul.cards .fact, ul.cards .myth {
 
 /* ---- BACKGROUNDS ---- */
 
-section#inquiries {
+section#statements {
 		background: 	radial-gradient(ellipse at top, var(--midred), transparent),
             		radial-gradient(ellipse at bottom, var(--deepred), #611c26);
 }
@@ -95,7 +129,7 @@ section#banner {
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
-	height: 50vh;
+
 }
 
 section#facts {
@@ -141,10 +175,6 @@ section#banner .inner {
 
 #header.alt {
 	background: rgba(0,0,0,0.5);
-}
-
-#nav {
-	flex: 1;
 }
 
 #header .headerLogo img {
@@ -229,11 +259,11 @@ ul.cards .myth {
 
 /* ---- MARGINS & PADDING ---- */
 
-#inquiries .inquiry {
+#statements .inquiry {
 	margin-bottom: 100px;
 }
 
-#inquries .inquiry:last-of-type {
+#statements .inquiry:last-of-type {
 	margin-bottom: 0px;
 }
 
@@ -244,11 +274,22 @@ body {
 	font-family: RocketSans, sans-serif !important;
 }
 
+.intro {
+	margin: 0 auto;
+	max-width: 80%;
+}
+
+.intro p {
+	font-size: 16pt;
+	letter-spacing: 0px !important;
+	text-transform: none !important;
+}
+
 .bold {
 	font-weight: 900 !important;
 }
 
-#inquiries p, .quoteAuthor {
+#statements p, .quoteAuthor {
 	color:  #fff !important;
 }
 
