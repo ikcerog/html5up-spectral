@@ -135,7 +135,7 @@ nav#nav {
 
 .menuItems ul li a {
 	text-align: center;
-	background-color: #007DBA;
+	background-color: #004f75;
 	display: block;
 	border-radius: 5px;
 	padding: 2px 10px;
@@ -178,7 +178,7 @@ nav#nav {
 /* ---- BACKGROUNDS ---- */
 
 #menu {
-	background-color: #007DBA;
+	background-color: #004f75;
 }
 
 section#statements {
