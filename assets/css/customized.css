@@ -1,3 +1,22 @@
+/* ==== TABLE OF CONTENTS ==== 
+
+- VARIABLES
+- MEDIA QUERIES
+-- IE ONLY
+-- MOBILE ONLY / MOBILE HIDDEN
+- FLEXBOX
+- HEADERS
+- BACKGROUNDS
+- IMAGE SIZING
+- MYTH LIST
+-- MYTH & FACT LABELS
+-- MYTH & FACT ICONS
+- FANCY LINE
+- MARGINS & PADDING
+- FONTS
+
+ ==== END TABLE OF CONTENTS ==== */
+
 /* ---- VARIABLES ---- */
 
 :root {
@@ -56,6 +75,10 @@
 	ul.cards .myth {
 		padding: 10px !important;
 	}
+	.menuItems a {
+		font-size: 8pt !imp;
+		padding: 4px !important;
+	}
 }
 
 /* ☠️ INTERNET EXPLORER ONLY ☢️ */
@@ -99,23 +122,57 @@ ul.cards .fact, ul.cards .myth, .menuItems ul li {
 
 nav#nav {
 	width: calc(100% - 400px);
-	max-width: 1400px;
+	max-width: 700px;
 }
 
 .menuItems ul li {
 	font-size: 0.8em;
 	letter-spacing: 0px !important;
 	list-style-type: none;
+	text-transform: uppercase;
 }
 
-/* ---- HEADERS ---- */
-
-.mythHeader {
-	width: 100%;
-	display: block;
-	color: white;
-	background: var(--rocketred);
+.menuItems ul li a {
 	text-align: center;
+	display: block;
+	border-radius: 5px;
+	border: 1px solid #aaa;
+	padding: 2px 10px;
+	line-height: 12pt;
+	max-width: 250px;
+}
+
+/* ---- SECTION HEADERS ---- */
+
+/* - INTRO SECTIONS - */
+
+.subheadIntro {
+	text-align: center;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.subheadIntro p {
+	font-size: 16pt;
+	line-height: 28pt;
+	font-style: italic;
+	letter-spacing: 1px !important;
+	text-transform: none !important;
+	font-family: 'Merriweather', serif;
+	width: 90%;
+	margin: 10px auto;
+}
+
+.subheadIntro.darkBG p {
+	background: rgba(46,56,66,0.7);
+	border-radius: 5px;
+	color: white;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+.subheadIntro.darkBG hr {
+	border-top:  2px solid white;
 }
 
 /* ---- BACKGROUNDS ---- */
@@ -139,7 +196,7 @@ section#facts {
 }
 
 section#banner .inner {
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.8);
 }
 
 .wrapper.style3 {
@@ -174,7 +231,7 @@ section#banner .inner {
 }
 
 #header.alt {
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.8);
 }
 
 #header .headerLogo img {
@@ -216,7 +273,7 @@ ul.cards img.icon {
 	width: auto;
 }
 
-/* ---- MYTH & FACT LABELS ---- */
+/* - MYTH & FACT LABELS - */
 
 .myth p {
 	display: block;
@@ -231,7 +288,7 @@ ul.cards img.icon {
 	color: var(--green);
 }
 
-/* -- MYTH & FACT ICONS -- */
+/* - MYTH & FACT ICONS - */
 
 ul.cards .card {
 	background-color: rgba(255,255,255,0.95);
@@ -257,9 +314,53 @@ ul.cards .myth {
 	padding: 20px;
 }
 
+/* ---- FANCY LINE ---- */
+
+hr.fancy-line:after {
+    content:'';
+    height: 0.5em;   
+    top: -8px;  /*change or bottom:0; */
+}
+
+hr.fancy-line {
+  border: 0;
+  height: 1px;
+  position: relative;
+  margin: 0.5em 0;
+}
+hr.fancy-line:before {
+  top: -0.5em;
+  height: 1em;
+}
+hr.fancy-line:after {
+  content: '';
+  height: 0.5em;
+  top: -8px; /*or bottom:0; */
+}
+hr.fancy-line:before,
+hr.fancy-line:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+}
+hr.fancy-line,
+hr.fancy-line:before {
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(75%, rgba(0, 0, 0, 0)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+}
+body,
+hr.fancy-line:after {
+  background: #f4f4f4;
+}
+
 /* ---- MARGINS & PADDING ---- */
 
 #statements .inquiry {
+	margin-top: 100px;
 	margin-bottom: 100px;
 }
 
@@ -267,6 +368,9 @@ ul.cards .myth {
 	margin-bottom: 0px;
 }
 
+#facts.wrapper, #statements.wrapper {
+	padding: 1em 0 4em 0 !important;
+}
 
 /* ---- FONTS ---- */
 
@@ -281,16 +385,19 @@ body {
 
 .intro p {
 	font-size: 16pt;
-	letter-spacing: 0px !important;
+	letter-spacing: 1px !important;
+	line-height: 26pt;
 	text-transform: none !important;
+	font-family: 'Merriweather', serif;
 }
 
 .bold {
 	font-weight: 900 !important;
 }
 
-#statements p, .quoteAuthor {
+#statements p, #commitment p, .quoteAuthor {
 	color:  #fff !important;
+	font-family: 'Merriweather', serif;
 }
 
 .quoteAuthor {
