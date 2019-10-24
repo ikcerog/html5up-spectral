@@ -148,14 +148,13 @@ nav#nav {
 /* - INTRO SECTIONS - */
 
 .subheadIntro {
-	text-align: center;
 	max-width: 1000px;
 	margin: auto;
 }
 
 .subheadIntro p {
-	font-size: 16pt;
-	line-height: 28pt;
+	font-size: calc(0.8w + 10px);
+	line-height: calc(1.3vw + 1.2vh + 5px);
 	font-style: italic;
 	letter-spacing: 1px !important;
 	text-transform: none !important;
@@ -177,6 +176,10 @@ nav#nav {
 }
 
 /* ---- BACKGROUNDS ---- */
+
+#menu {
+	background-color: #007DBA;
+}
 
 section#statements {
 		background: 	radial-gradient(ellipse at top, var(--midred), transparent),
@@ -361,7 +364,7 @@ hr.fancy-line:after {
 /* ---- MARGINS & PADDING ---- */
 
 #statements .inquiry {
-	margin: 100px auto;
+	margin: 70px auto;
 	max-width: 90%;
 }
 
@@ -379,13 +382,20 @@ body {
 	font-family: RocketSans, sans-serif !important;
 }
 
+h2.sectionTitle {
+	font-size: calc(2vw + 1.4vh);
+	text-align: center;
+	padding-top: 50px;
+}
+
 .intro {
 	margin: 0 auto;
 	max-width: 80%;
 }
 
 .intro p {
-	font-size: 16pt;
+	font-size: calc(0.7vw * 10vh + 8px);
+	line-height: calc(0.4vw + 20px) !important;
 	letter-spacing: 1px !important;
 	line-height: 26pt;
 	text-transform: none !important;
