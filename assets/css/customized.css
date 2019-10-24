@@ -96,7 +96,7 @@
             		radial-gradient(ellipse at bottom, #76232F, #611c26) !important;
 	}
 	nav#nav .menuItems {
-		width: 1000px;
+		width: 1000px !important;
 	}
 }
 
