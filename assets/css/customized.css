@@ -412,6 +412,10 @@ hr.fancy-line:after {
 
 /* ---- MARGINS & PADDING ---- */
 
+.inquiry h2 {
+	margin-bottom: 0px;
+}
+
 #statements .inquiry {
 	margin: 70px auto;
 	max-width: 90%;
@@ -468,9 +472,17 @@ h2.sectionTitle {
 	font-style: italic;
 }
 
+.quoteDate {
+	display: block;
+	color:  white;
+	padding-bottom: 20px;
+}
+
 .noBreak {
 	white-space: nowrap;
 }
+
+
 
 @font-face {
     font-display: swap;
