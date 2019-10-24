@@ -393,7 +393,7 @@ hr.fancy-line:after {
 	margin-bottom: 0px;
 }
 
-#facts.wrapper, #statements.wrapper {
+#facts.wrapper, #statements.wrapper, #zones.wrapper {
 	padding: 1em 0 4em 0 !important;
 }
 
