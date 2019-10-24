@@ -122,7 +122,7 @@ ul.cards .fact, ul.cards .myth, .menuItems ul li {
 
 nav#nav {
 	width: calc(100% - 400px);
-	max-width: 700px;
+	max-width: 950px;
 }
 
 .menuItems ul li {
@@ -130,7 +130,7 @@ nav#nav {
 	letter-spacing: 0px !important;
 	list-style-type: none;
 	text-transform: uppercase;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 2px;
 }
 
 .menuItems ul li a {
