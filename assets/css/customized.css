@@ -416,7 +416,7 @@ hr.fancy-line:after {
 	margin-bottom: 0px;
 }
 
-#statements .inquiry {
+#statements .inquiry, #zones p {
 	margin: 70px auto;
 	max-width: 90%;
 }
