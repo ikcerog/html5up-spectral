@@ -395,7 +395,7 @@ h2.sectionTitle {
 
 .intro p {
 	font-size: calc(0.7vw * 10vh + 8px);
-	line-height: calc(0.4vw + 20px) !important;
+	line-height: calc(0.8vw + 20px) !important;
 	letter-spacing: 1px !important;
 	line-height: 26pt;
 	text-transform: none !important;
@@ -413,6 +413,10 @@ h2.sectionTitle {
 
 .quoteAuthor {
 	font-style: italic;
+}
+
+.noBreak {
+	white-space: nowrap;
 }
 
 @font-face {
