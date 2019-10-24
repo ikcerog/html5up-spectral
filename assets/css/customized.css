@@ -125,7 +125,7 @@ ul.cards li, .card, .card .container, #header, nav#nav .menuItems ul, nav#nav {
 	display: flex;
 }
 
-ul.cards li, .card .container, #header, nav#nav .menuItems ul, nav#nav {
+nav#nav .menuItems ul, nav#nav {
 	align-items: center;
 }
 
