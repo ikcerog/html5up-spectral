@@ -431,7 +431,7 @@ h2.sectionTitle {
 	font-weight: 900 !important;
 }
 
-#statements p, #commitment p, #zones p, .quoteAuthor {
+#statements p, #commitment p, #zones p, #openStatement p, .quoteAuthor {
 	color:  #fff !important;
 	font-family: 'Merriweather', serif;
 }
