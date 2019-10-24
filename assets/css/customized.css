@@ -181,7 +181,7 @@ nav#nav {
 	background-color: #004f75;
 }
 
-section#statements {
+section#statements, section#openStatement {
 		background: 	radial-gradient(ellipse at top, var(--midred), transparent),
             		radial-gradient(ellipse at bottom, var(--deepred), #611c26);
 }
