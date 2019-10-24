@@ -403,6 +403,10 @@ body {
 	font-family: RocketSans, sans-serif !important;
 }
 
+p a {
+	font-weight: bold !important;
+}
+
 h2.sectionTitle {
 	font-size: calc(2vw + 1.4vh);
 	text-align: center;
