@@ -130,13 +130,14 @@ nav#nav {
 	letter-spacing: 0px !important;
 	list-style-type: none;
 	text-transform: uppercase;
+	padding: 12px 10px 10px 10px;
 }
 
 .menuItems ul li a {
 	text-align: center;
+	background-color: #007DBA;
 	display: block;
 	border-radius: 5px;
-	border: 1px solid #aaa;
 	padding: 2px 10px;
 	line-height: 12pt;
 	max-width: 250px;
@@ -360,8 +361,8 @@ hr.fancy-line:after {
 /* ---- MARGINS & PADDING ---- */
 
 #statements .inquiry {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin: 100px auto;
+	max-width: 90%;
 }
 
 #statements .inquiry:last-of-type {
